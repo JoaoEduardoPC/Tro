@@ -158,9 +158,9 @@ public class AddTaskActivity extends AppCompatActivity {
         long newRowId = db.insert(TaskContract.TaskEntry.TABLE_NAME, null, values);
         db.close();
         if (newRowId == -1) {
-            Toast.makeText(this, "Failed to add task", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Falha ao adicionar tarefa", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Task added successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Tarefa adicionada", Toast.LENGTH_SHORT).show();
         }
     }
 }

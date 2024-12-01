@@ -3,11 +3,6 @@ package com.anjana.to_dolist;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.activity.EdgeToEdge;
-import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import android.database.Cursor;
 import android.widget.ArrayAdapter;
@@ -61,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
                 markTaskAsComplete(position);
                 taskData.remove(position);
-                Toast.makeText(MainActivity.this, "Task Deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Tarefa Deletada", Toast.LENGTH_SHORT).show();
                 adapter.notifyItemRemoved(position);
             }
 
@@ -70,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
                 markTaskAsComplete(position);
                 taskData.remove(position);
-                Toast.makeText(MainActivity.this, "Task Completed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Tarefa Completada", Toast.LENGTH_SHORT).show();
                 adapter.notifyItemRemoved(position);
             }
         });

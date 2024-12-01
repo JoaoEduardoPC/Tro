@@ -93,7 +93,7 @@ public class editTask extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 editTask(task);
-                Toast.makeText(editTask.this, "Task edited", Toast.LENGTH_SHORT).show();
+                Toast.makeText(editTask.this, "Tarefa Editada", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(editTask.this, MainActivity.class);
                 startActivity(intent);
             }
